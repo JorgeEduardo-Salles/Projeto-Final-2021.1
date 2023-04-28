@@ -133,11 +133,15 @@ Figura 7. Dashboard 3 - Prefeituras.
 ### 8. Conclusões
 
 As ferramentas utilizadas para tratamento dos dados são completas e de fácil compreensão, mesmo se utilizadas apenas para transformações básicas, como no caso do presente projeto. No entanto, alguns erros inexplicáveis ocorreram.
+
 Durante a montagem do fluxo de transformação ‘etl01_enviados’ no PDI, sempre que inserida uma das 4 estruturas de carregamento dos dados da planilha excel, a caixa ‘Microsoft Excel input’ apresentava o seguinte erro, no momento da seleção da planilha (sheet):
   
 Figura 8. Erro observado durante a transformação.
+
 Observou-se que inicialmente o erro se dava em razão do nome do arquivo conter o caractere ‘-‘ e que não bastava renomear pelo Windows, havendo necessidade de abrir o arquivo excel e salvá-lo com novo nome, sem o ‘-‘.
+
 De toda forma, mesmo que não seja para popular um DW em um SGBD, o PDI se mostrou bastante eficiente para a transformação dos dados, podendo ser utilizado em larga escala para a atividade de auditoria, onde não há tempo nem interesse em estruturar bancos de dados, mas sim a transformação para rápido consumo, sendo que a possibilidade de documentação pelo fluxograma de transformação é uma vantagem adicional.
+
 O PowerBI encerra tudo que de mais prático existe em visualização de dados. Entretanto, em alguns casos é interessante carregar o ETL em uma planilha para que seja utilizada pelo Excel, pois as análises exploratórias simples podem ser realizadas com mais elasticidade no caso das auditorias.
 
 
