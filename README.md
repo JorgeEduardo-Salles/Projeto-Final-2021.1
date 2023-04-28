@@ -34,16 +34,11 @@ Uma evolução desejável passa pela atualização automática, que demandará u
 
 ### 2. Descrição das fontes de dados
 
-Tabela 1. Fonte de dados 1 - Planilha Excel ‘Relatório Processos Recebidos/Enviados’ – 04 (quatro) relatórios
-
-Rótulo da tabela	Descrição	Tipo de formato	Formato	Formato especial
-
-nrdoc	numero sequencial do processo	valor	geral	000000
-
-dvdoc	número de controle	valor	geral	0
-
-andoc	ano	valor	geral	0000
-
+Tabela 1. Fonte de dados 1 - Planilha Excel ‘Relatório Processos Recebidos/Enviados’ – 04 (quatro) relatórios  
+Rótulo da tabela  Descrição	  Tipo de formato	  Formato	  Formato especial
+nrdoc	  numero sequencial do processo	  valor	geral	  000000
+dvdoc	  número de controle	  valor	geral	  0
+andoc	  ano	  valor	geral	  0000
 dcgrnatureza	grupo de natureza do processo	texto	geral	 
 dcnatureza	detalhe da natureza do processo	texto	geral	 
 nmorgao	órgão	texto	geral	 
