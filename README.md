@@ -1,6 +1,6 @@
 # Relatório de Produtividade de Processos
 
-#### Aluno: [Jorge eduardo Salgado Salles](https://github.com/JorgeEduardo-Salles)
+#### Aluno: [Jorge eduardo Salgado Salles](https://github.com/JorgeEduardo-Salles).
 #### Orientador: [Anderson Nascimento](https://github.com/insightds).
 
 ---
@@ -21,10 +21,15 @@ This article demonstrates the implementation of data visualization to support de
 
 Uma das formas de medição da produtividade das subsecretarias vinculadas à Secretaria Geral de Controle Externo é a partir dos processos que são tramitados. 
 O sistema que controla os processos – SCAP – possui muitas informações relevantes para o gerenciamento da produtividade dos setores, porém não possui relatórios suficientemente detalhados que permitam que os gestores, de forma rápida e eficiente, obtenham as informações necessárias para informar os relatórios que lhes são demandados e muito menos para que possam ter permanente controle das atividades que estão sendo desempenhadas sem esforço considerável de mão de obra para produzir as informações.
+
 Atualmente, para que seja possível obter uma base única com as informações, de modo que se possa utilizar qualquer ferramenta de análise, como o PowerBI ou o próprio Excel, a subsecretaria precisa gerar 2 (dois) relatórios diferentes existentes no sistema SCAP, sendo que um deles precisa ser gerado por cada setor. Ou seja, como a subsecretaria possui 4 (quatro) coordenadorias de auditoria, é preciso gerar um total de 4 (quatro) relatórios para que depois sejam compilados manualmente e, aí sim, seja possível a utilização das ferramentas de análise.
+
 Não bastasse o trabalho de compilação, os dados dos relatórios são gerados em formatos diferentes, havendo a necessidade de transformações diferentes em cada um deles para que fiquem no mesmo formato para que possam ser compilados.
+
 Espera-se que este projeto permita a automatização dessa tarefa a partir dos relatórios gerados, com a definição de um DW compilado e formatado, que possibilite a criação de diferentes visualizações que facilitem a tomada de decisão e a geração de relatórios gerenciais.
+
 Faz parte desse trabalho o desenvolvimento de 03 (três) painéis BI para visualização de resumos gerais cuja demanda já foi mapeada historicamente, sem perder de vista que o principal produto é o DW, visto que a ideia é permitir às equipes um total domínio sobre os dados para que possam gerar suas próprias visualizações e soluções quando as demandas se apresentarem.
+
 Uma evolução desejável passa pela atualização automática, que demandará uma permissão específica para acesso direto às bases de dados do SCAP, não sendo objetivo deste trabalho
 
 ### 2. Descrição das fontes de dados
