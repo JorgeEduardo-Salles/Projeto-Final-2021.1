@@ -74,7 +74,10 @@ apelido	Apelido do servidor	texto
 ### 3. Proposta de Processo BI
 
 A partir da modelagem do problema a ser resolvido – que consiste basicamente de permitir a geração periódica de relatórios de produtividade, a partir dos relatórios incompletos e inconsistentes já existentes no sistema transacional – , pretende-se inicialmente elaborar a arquitetura do DW no Power Architect para receber os dados gerados por 07 (sete) planilhas do Excel que serão importadas, transformadas e carregadas pelo PDI no Postgres. A partir do DW estruturado, serão elaborados dashboards no PowerBI, conforme a figura a seguir:
-  Figura 1. Modelagem BI.
+ 
+ https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/issues/1#issue-1704602921
+ 
+ Figura 1. Modelagem BI.
 
 ### 4. Modelo Multidimensional
 
