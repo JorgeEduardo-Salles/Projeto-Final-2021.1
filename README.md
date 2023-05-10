@@ -38,18 +38,20 @@ Tabela 1. Fonte de dados 1 - Planilha Excel ‘Relatório Processos Recebidos/En
 
 ![tabela1](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/b2cf7dc9-46c2-43eb-8fe8-726b9e275fc4)
 
-
+ 
+ 
 Tabela 2. Fonte de dados 2 - Planilha Excel ‘Relatório de processos produzidos no período selecionado’
 
 ![tabela2](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/b6e95783-0f95-4554-8893-1afadbb2f071)
 
-
+ 
+ 
 Tabela 3. Fonte de dados 3 - Planilha ‘Funcionários’
 
 ![tabela3](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/547935a8-217f-435c-bd6d-bf4ed23cb70d)
 
-
-
+ 
+ 
 ### 3. Proposta de Processo BI
 
 A partir da modelagem do problema a ser resolvido – que consiste basicamente de permitir a geração periódica de relatórios de produtividade, a partir dos relatórios incompletos e inconsistentes já existentes no sistema transacional – , pretende-se inicialmente elaborar a arquitetura do DW no Power Architect para receber os dados gerados por 07 (sete) planilhas do Excel que serão importadas, transformadas e carregadas pelo PDI no Postgres. A partir do DW estruturado, serão elaborados dashboards no PowerBI, conforme a figura a seguir:
@@ -76,9 +78,11 @@ Figura 2. Modelo Multidimensional.
 O Data Warehouse será a fonte integradora de informações da empresa, a tecnologia será utilizada com o intuito de servir de base para a camada de aplicação que será responsável por fornecer dados para a tomada de decisão na organização. 
 
 5.1. Arquitetura
+
 Será utilizada arquitetura independente, devido ao curto espaço de tempo para implementação e em razão da necessidade do cliente.
 
 5.2. Abordagem de Construção
+
 Será feita abordagem Botom-Up devido aos seguintes fatores:
 - rápida implementação, com foco no problema imediato de cada setor da organização;
 - desejável empoderamento dos gestores setoriais na customização das soluções;
@@ -86,6 +90,7 @@ Será feita abordagem Botom-Up devido aos seguintes fatores:
 - alinhamento com a cultura geral da organização – no que se refere às auditorias governamentais, atividade fim da SGE.
 
 5.3. Arquitetura Física
+
 Será utilizada arquitetura física On-Premises devido aos seguintes fatores:
 - simplicidade da solução
 - solução setorial e de desejável possibilidade de customização setorial;
