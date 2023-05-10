@@ -35,40 +35,19 @@ Uma evolução desejável passa pela atualização automática, que demandará u
 ### 2. Descrição das fontes de dados
 
 Tabela 1. Fonte de dados 1 - Planilha Excel ‘Relatório Processos Recebidos/Enviados’ – 04 (quatro) relatórios  
-Rótulo da tabela  Descrição	  Tipo de formato	  Formato	  Formato especial
-nrdoc	  numero sequencial do processo	  valor	geral	  000000
-dvdoc	  número de controle	  valor	geral	  0
-andoc	  ano	  valor	geral	  0000
-dcgrnatureza	grupo de natureza do processo	texto	geral	 
-dcnatureza	detalhe da natureza do processo	texto	geral	 
-nmorgao	órgão	texto	geral	 
-nminteressado	interessado principal	texto	geral	 
-txobservacao	observação	texto	geral	 
-dctramita	tipo de processo	texto	geral	(anexo, apenso, principal, documento)
-cdultimacarga	código do setor última carga	valor	geral	 
-cdpesquisa	sigla do setor última carga	texto	geral	 
-nrofiorigem	número do ofício de origem	texto	geral	 
-dtofiorigem	data do ofício de origem	data	personalizado	dd/mm/aaaa hh:mm
-nrdocorigem	documento de origem	valor	geral	 
-dtcadastro	data do cadastro do processo	data	personalizado	dd/mm/aaaa hh:mm
-fgprocdigital	flag de processo digital	texto	geral	(verdadeiro, falso)
+
+![tabela1](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/b2cf7dc9-46c2-43eb-8fe8-726b9e275fc4)
+
 
 Tabela 2. Fonte de dados 2 - Planilha Excel ‘Relatório de processos produzidos no período selecionado’
 
-Rótulo da tabela	Descrição	Tipo de formato	Formato	Formato Especial
-orgao	nome abreviado do setor	texto	geral	 
-funcionario	nome do servidor	texto	geral	 
-processo	número completo do processo	texto	geral	000000-0/00
-natureza	natureza completa do processo	texto	geral	 
-data_informacao	data da informação	texto	geral	dd/mm/aaaa
-data_saida	data da tramitação do processo	texto	geral	dd/mm/aaaa
+![tabela2](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/b6e95783-0f95-4554-8893-1afadbb2f071)
+
 
 Tabela 3. Fonte de dados 3 - Planilha ‘Funcionários’
 
-Rótulo da tabela	Descrição	Tipo de formato
-matrícula	Número de 4 dígitos	valor
-servidores	nome do servidor	texto
-apelido	Apelido do servidor	texto
+![tabela3](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/547935a8-217f-435c-bd6d-bf4ed23cb70d)
+
 
 
 ### 3. Proposta de Processo BI
