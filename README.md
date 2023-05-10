@@ -138,7 +138,7 @@ Dashboard 2: Trata-se de um visualizador de produtividade por setor e por servid
 <img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/58187b9e-5cbc-4004-b2a3-819a2df88200" />
 
 Figura 6. Dashboard 2 - Produtividade.
-<div align="center">
+</div>
  
 Dashboard 3: Trata-se de uma visualização espacial, mostrando a quantidade de processos instruídos por prefeitura. Nesta visualização, fez-se a ressalva no botão informação de que se trata apenas dos processos referentes à UG Prefeitura, já que pode gerar confusão com as demais UGs municipais.
 
