@@ -117,7 +117,10 @@ ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor
 Figura 3. ETL01 – Dim.Processo.
 
 ETL02_PRODUTIVIDADE:	Por fim, importou-se a tabela de produtividade que contém os processos assinados pelos funcionários; tratou-se o campo processo para servir de chave estrangeira; tratou-se o nome do setor; tratou-se o nome dos funcionários; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; e adicionou-se duas dimensões degeneradas da tabela funcionários para exportar para a tabela ft_produtividade no Postrgres, que havia sido criada no Powerarchitect.
-- Figura 4. ETL02 – FT.Produtividade.
+
+![figura4](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/11fcdded-09a2-4e32-b2be-6df762e212d2)
+
+Figura 4. ETL02 – FT.Produtividade.
 
 Por fim, executou-se diretamente no Postgres um script SQL padronizado para popular a dimensão dim_data, que também foi criada no Power Architect.
 
@@ -130,12 +133,21 @@ Ainda houve a necessidade de alguma transformação, como a adição de colunas 
 7.2. Telas do Dashboard
 
 Dashboard 1: Trata-se de um visualizador rápido de produção por trimestre, de onde é possível retirar os resumos para o relatório trimestral.
-- Figura 5. Dashboard 1 - Processos.
+
+![figura5](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/d6f90c33-1cf8-4acc-8286-517ba59d2f65)
+
+Figura 5. Dashboard 1 - Processos.
 
 Dashboard 2: Trata-se de um visualizador de produtividade por setor e por servidor. Considerando que cada setor possui quantitativo diferente de servidores e processos, criou-se uma coluna calculada para obtenção da quantidade de instruções processuais por servidor por setor. Incluiu-se também a evolução trimestral dessa produtividade.
-- Figura 6. Dashboard 2 - Produtividade.
+
+![figura6](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/58187b9e-5cbc-4004-b2a3-819a2df88200)
+
+Figura 6. Dashboard 2 - Produtividade.
 
 Dashboard 3: Trata-se de uma visualização espacial, mostrando a quantidade de processos instruídos por prefeitura. Nesta visualização, fez-se a ressalva no botão informação de que se trata apenas dos processos referentes à UG Prefeitura, já que pode gerar confusão com as demais UGs municipais.
+
+![figura7](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/2450ac8d-3583-4999-9345-8f92ef4dfa8e)
+
 Figura 7. Dashboard 3 - Prefeituras.
 
 ### 8. Conclusões
@@ -144,6 +156,8 @@ As ferramentas utilizadas para tratamento dos dados são completas e de fácil c
 
 Durante a montagem do fluxo de transformação ‘etl01_enviados’ no PDI, sempre que inserida uma das 4 estruturas de carregamento dos dados da planilha excel, a caixa ‘Microsoft Excel input’ apresentava o seguinte erro, no momento da seleção da planilha (sheet):
   
+![figura8](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/90c0db6c-a0b8-474c-89cf-df0897559435)
+
 Figura 8. Erro observado durante a transformação.
 
 Observou-se que inicialmente o erro se dava em razão do nome do arquivo conter o caractere ‘-‘ e que não bastava renomear pelo Windows, havendo necessidade de abrir o arquivo excel e salvá-lo com novo nome, sem o ‘-‘.
