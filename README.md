@@ -53,9 +53,10 @@ Tabela 3. Fonte de dados 3 - Planilha ‘Funcionários’
 ### 3. Proposta de Processo BI
 
 A partir da modelagem do problema a ser resolvido – que consiste basicamente de permitir a geração periódica de relatórios de produtividade, a partir dos relatórios incompletos e inconsistentes já existentes no sistema transacional – , pretende-se inicialmente elaborar a arquitetura do DW no Power Architect para receber os dados gerados por 07 (sete) planilhas do Excel que serão importadas, transformadas e carregadas pelo PDI no Postgres. A partir do DW estruturado, serão elaborados dashboards no PowerBI, conforme a figura a seguir:
+
  
  <div align="center">
- ![figura1](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/e0453062-c3f5-4a2c-8426-71564b465059)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/e0453062-c3f5-4a2c-8426-71564b465059" />
  
 Figura 1. Modelagem BI.
 </div>
@@ -65,7 +66,7 @@ Figura 1. Modelagem BI.
 Esta seção apresenta o modelo estrela (star schema) do projeto Relatório de Produtividade elaborado no software Power Architect e carregado no Postgres.
 
 <div align="center">
-![figura2](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/ceef7303-3cf8-4fa3-99d2-c481cc3c26c3)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/ceef7303-3cf8-4fa3-99d2-c481cc3c26c3" /> 
 
 Figura 2. Modelo Multidimensional.
 </div>
@@ -96,7 +97,7 @@ Será utilizada arquitetura física On-Premises devido aos seguintes fatores:
 ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor – que é o que o sistema gera; adicionou-se a coluna com o nome de cada setor e agrupou-se em uma única tabela; ajustou-se o número do processo para que ficasse igual aos das outras tabelas e servisse de chave estrangeira; criou-se uma coluna classificando melhor a natureza do processo para possibilitar relatórios mais úteis; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; tratou-se os campos nulos, tratou-se as strings; e exportou-se para a tabela dim_processos que havia sido criada no postgres pelo Powerarchitect. Adicionalmente gerou-se uma planilha excel também
 
 <div align="center">
-![figura3](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/4dea7f1e-176f-46e3-99ce-e50527bedd0c)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/4dea7f1e-176f-46e3-99ce-e50527bedd0c" />
 
 Figura 3. ETL01 – Dim.Processo.
 </div>
@@ -104,7 +105,7 @@ Figura 3. ETL01 – Dim.Processo.
 ETL02_PRODUTIVIDADE:	Por fim, importou-se a tabela de produtividade que contém os processos assinados pelos funcionários; tratou-se o campo processo para servir de chave estrangeira; tratou-se o nome do setor; tratou-se o nome dos funcionários; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; e adicionou-se duas dimensões degeneradas da tabela funcionários para exportar para a tabela ft_produtividade no Postrgres, que havia sido criada no Powerarchitect.
 
 <div align="center">
-![figura4](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/11fcdded-09a2-4e32-b2be-6df762e212d2)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/11fcdded-09a2-4e32-b2be-6df762e212d2" />
 
 Figura 4. ETL02 – FT.Produtividade.
 </div>
@@ -122,7 +123,7 @@ Ainda houve a necessidade de alguma transformação, como a adição de colunas 
 Dashboard 1: Trata-se de um visualizador rápido de produção por trimestre, de onde é possível retirar os resumos para o relatório trimestral.
 
 <div align="center">
-![figura5](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/d6f90c33-1cf8-4acc-8286-517ba59d2f65)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/d6f90c33-1cf8-4acc-8286-517ba59d2f65" />
 
 Figura 5. Dashboard 1 - Processos.
 </div>
@@ -130,7 +131,7 @@ Figura 5. Dashboard 1 - Processos.
 Dashboard 2: Trata-se de um visualizador de produtividade por setor e por servidor. Considerando que cada setor possui quantitativo diferente de servidores e processos, criou-se uma coluna calculada para obtenção da quantidade de instruções processuais por servidor por setor. Incluiu-se também a evolução trimestral dessa produtividade.
 
 <div align="center">
-![figura6](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/58187b9e-5cbc-4004-b2a3-819a2df88200)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/58187b9e-5cbc-4004-b2a3-819a2df88200" />
 
 Figura 6. Dashboard 2 - Produtividade.
 <div align="center">
@@ -138,7 +139,7 @@ Figura 6. Dashboard 2 - Produtividade.
 Dashboard 3: Trata-se de uma visualização espacial, mostrando a quantidade de processos instruídos por prefeitura. Nesta visualização, fez-se a ressalva no botão informação de que se trata apenas dos processos referentes à UG Prefeitura, já que pode gerar confusão com as demais UGs municipais.
 
  <div align="center">
-![figura7](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/2450ac8d-3583-4999-9345-8f92ef4dfa8e)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/2450ac8d-3583-4999-9345-8f92ef4dfa8e" />
 
 Figura 7. Dashboard 3 - Prefeituras.
 <div align="center">
@@ -150,7 +151,7 @@ As ferramentas utilizadas para tratamento dos dados são completas e de fácil c
 Durante a montagem do fluxo de transformação ‘etl01_enviados’ no PDI, sempre que inserida uma das 4 estruturas de carregamento dos dados da planilha excel, a caixa ‘Microsoft Excel input’ apresentava o seguinte erro, no momento da seleção da planilha (sheet):
 
  <div align="center">
-![figura8](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/90c0db6c-a0b8-474c-89cf-df0897559435)
+<img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/90c0db6c-a0b8-474c-89cf-df0897559435" />
 
 Figura 8. Erro observado durante a transformação.
 <div align="center">
