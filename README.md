@@ -124,6 +124,7 @@ Por fim, executou-se diretamente no Postgres um script SQL padronizado para popu
 ### 7. Dashboards
 
 7.1. Descrição da Elaboração
+
 A visualização dos dados foi feita por meio do software PowerBI em conexão com o DW criado e populado no Postgres. 
 Ainda houve a necessidade de alguma transformação, como a adição de colunas calculadas para servirem de contadores e colunas com tratamento de strings para diferenciar os processos que se referiam às esferas municipal e estadual, bem como os relativos às unidades gestoras de Prefeituras.
 
