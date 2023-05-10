@@ -75,7 +75,7 @@ apelido	Apelido do servidor	texto
 
 A partir da modelagem do problema a ser resolvido – que consiste basicamente de permitir a geração periódica de relatórios de produtividade, a partir dos relatórios incompletos e inconsistentes já existentes no sistema transacional – , pretende-se inicialmente elaborar a arquitetura do DW no Power Architect para receber os dados gerados por 07 (sete) planilhas do Excel que serão importadas, transformadas e carregadas pelo PDI no Postgres. A partir do DW estruturado, serão elaborados dashboards no PowerBI, conforme a figura a seguir:
  
- https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/issues/1#issue-1704602921
+ ![figura1](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/e0453062-c3f5-4a2c-8426-71564b465059)
  
  Figura 1. Modelagem BI.
 
@@ -83,7 +83,9 @@ A partir da modelagem do problema a ser resolvido – que consiste basicamente d
 
 Esta seção apresenta o modelo estrela (star schema) do projeto Relatório de Produtividade elaborado no software Power Architect e carregado no Postgres.
  
-- Figura 2. Modelo Multidimensional.
+![figura2](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/ceef7303-3cf8-4fa3-99d2-c481cc3c26c3)
+
+Figura 2. Modelo Multidimensional.
 
 ### 5. Elaboração do Data Warehouse
 
