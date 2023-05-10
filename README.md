@@ -146,7 +146,7 @@ Dashboard 3: Trata-se de uma visualização espacial, mostrando a quantidade de 
 <img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/2450ac8d-3583-4999-9345-8f92ef4dfa8e" />
 
 Figura 7. Dashboard 3 - Prefeituras.
-<div align="center">
+</div>
  
 ### 8. Conclusões
 
@@ -158,7 +158,7 @@ Durante a montagem do fluxo de transformação ‘etl01_enviados’ no PDI, semp
 <img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/90c0db6c-a0b8-474c-89cf-df0897559435" />
 
 Figura 8. Erro observado durante a transformação.
-<div align="center">
+</div>
  
 Observou-se que inicialmente o erro se dava em razão do nome do arquivo conter o caractere ‘-‘ e que não bastava renomear pelo Windows, havendo necessidade de abrir o arquivo excel e salvá-lo com novo nome, sem o ‘-‘.
 
