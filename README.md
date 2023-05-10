@@ -94,7 +94,8 @@ Será utilizada arquitetura física On-Premises devido aos seguintes fatores:
 
 ### 6. Projeto ETL
 
-ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor – que é o que o sistema gera; adicionou-se a coluna com o nome de cada setor e agrupou-se em uma única tabela; ajustou-se o número do processo para que ficasse igual aos das outras tabelas e servisse de chave estrangeira; criou-se uma coluna classificando melhor a natureza do processo para possibilitar relatórios mais úteis; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; tratou-se os campos nulos, tratou-se as strings; e exportou-se para a tabela dim_processos que havia sido criada no postgres pelo Powerarchitect. Adicionalmente gerou-se uma planilha excel também
+ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor – que é o que o sistema gera; adicionou-se a coluna com o nome de cada setor e agrupou-se em uma única tabela; ajustou-se o número do processo para que ficasse igual aos das outras tabelas e servisse de chave estrangeira; criou-se uma coluna classificando melhor a natureza do processo para possibilitar relatórios mais úteis; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; tratou-se os campos nulos, tratou-se as strings; e exportou-se para a tabela dim_processos que havia sido criada no postgres pelo Powerarchitect. Adicionalmente gerou-se uma planilha excel também.
+
 
 <div align="center">
 <img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/4dea7f1e-176f-46e3-99ce-e50527bedd0c" />
@@ -102,13 +103,16 @@ ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor
 Figura 3. ETL01 – Dim.Processo.
 </div>
 
+
 ETL02_PRODUTIVIDADE:	Por fim, importou-se a tabela de produtividade que contém os processos assinados pelos funcionários; tratou-se o campo processo para servir de chave estrangeira; tratou-se o nome do setor; tratou-se o nome dos funcionários; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; e adicionou-se duas dimensões degeneradas da tabela funcionários para exportar para a tabela ft_produtividade no Postrgres, que havia sido criada no Powerarchitect.
+
 
 <div align="center">
 <img src="https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/11fcdded-09a2-4e32-b2be-6df762e212d2" />
 
 Figura 4. ETL02 – FT.Produtividade.
 </div>
+
 
 Por fim, executou-se diretamente no Postgres um script SQL padronizado para popular a dimensão dim_data, que também foi criada no Power Architect.
 
