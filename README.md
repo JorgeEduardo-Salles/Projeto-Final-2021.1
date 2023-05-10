@@ -109,7 +109,10 @@ Será utilizada arquitetura física On-Premises devido aos seguintes fatores:
 ### 6. Projeto ETL
 
 ETL01_PROCESSO:	Importou-se os 05 (cinco) relatórios individualizados por setor – que é o que o sistema gera; adicionou-se a coluna com o nome de cada setor e agrupou-se em uma única tabela; ajustou-se o número do processo para que ficasse igual aos das outras tabelas e servisse de chave estrangeira; criou-se uma coluna classificando melhor a natureza do processo para possibilitar relatórios mais úteis; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; tratou-se os campos nulos, tratou-se as strings; e exportou-se para a tabela dim_processos que havia sido criada no postgres pelo Powerarchitect. Adicionalmente gerou-se uma planilha excel também
-- Figura 3. ETL01 – Dim.Processo.
+
+![figura3](https://github.com/JorgeEduardo-Salles/Projeto-Final-2021.1/assets/79606219/4dea7f1e-176f-46e3-99ce-e50527bedd0c)
+
+Figura 3. ETL01 – Dim.Processo.
 
 ETL02_PRODUTIVIDADE:	Por fim, importou-se a tabela de produtividade que contém os processos assinados pelos funcionários; tratou-se o campo processo para servir de chave estrangeira; tratou-se o nome do setor; tratou-se o nome dos funcionários; incluiu-se uma sequência para servir de SK; excluiu-se os campos inúteis; e adicionou-se duas dimensões degeneradas da tabela funcionários para exportar para a tabela ft_produtividade no Postrgres, que havia sido criada no Powerarchitect.
 - Figura 4. ETL02 – FT.Produtividade.
